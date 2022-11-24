@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HomeScreen: View {
     // MARK: - PROPERTIES
-    @State var isOpenAlert = false
-    @State var isOpenPopUp = false
+    @State var showAlert = false
+    @State var showModal = false
     
     // MARK: - BODY
     var body: some View {
@@ -56,24 +56,26 @@ extension HomeScreen {
     private var leadingIcon: some View {
         ZStack {
             Button(action: {
-                if isOpenAlert {
-                    self.isOpenAlert.toggle()
-                }
+                withAnimation { showAlert.toggle() }
             }, label: {
                 Image(systemName: "cloud.sun.fill")
                     .resizable()
                     .foregroundStyle(.white, .yellow)
             })
             .padding(.horizontal, 24)
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Not yet available"),
+                    message: Text("Currently on active development"), dismissButton: .default(Text("OK")))
+            }
         }
+        
     }
     
     private var trailingIcon: some View {
         ZStack {
             Button(action: {
-                if isOpenPopUp {
-                    self.isOpenPopUp.toggle()
-                }
+                withAnimation { showModal.toggle() }
             }, label: {
                 Image(systemName: "cart.badge.plus")
                     .resizable()
