@@ -82,6 +82,11 @@ extension HomeScreen {
                     .foregroundStyle(.green, .white)
             })
             .padding(.horizontal, 24)
+            .sheet(isPresented: $showModal) {
+                ModalView()
+                    .presentationDetents([.medium])
+                    .presentationDragIndicator(.visible)
+            }
         }
     }
 }

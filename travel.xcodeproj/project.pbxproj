@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08BDFAAE29311F2C00D801BF /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BDFAAD29311F2C00D801BF /* ModalView.swift */; };
 		08D377B8292E64F6009F89B6 /* travelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D377B7292E64F6009F89B6 /* travelApp.swift */; };
 		08D377BA292E64F6009F89B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D377B9292E64F6009F89B6 /* ContentView.swift */; };
 		08D377BC292E64F9009F89B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D377BB292E64F9009F89B6 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08BDFAAD29311F2C00D801BF /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		08D377B4292E64F6009F89B6 /* travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D377B7292E64F6009F89B6 /* travelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travelApp.swift; sourceTree = "<group>"; };
 		08D377B9292E64F6009F89B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08BDFAAC29311F1700D801BF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				08BDFAAD29311F2C00D801BF /* ModalView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		08D377AB292E64F6009F89B6 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		08D377C5292E6528009F89B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				08BDFAAC29311F1700D801BF /* Helper */,
 				08D377CA292E660F009F89B6 /* Home */,
 			);
 			path = View;
@@ -161,6 +172,7 @@
 			files = (
 				08D377C9292E65B8009F89B6 /* HomeScreen.swift in Sources */,
 				08D377C7292E6538009F89B6 /* HomeView.swift in Sources */,
+				08BDFAAE29311F2C00D801BF /* ModalView.swift in Sources */,
 				08D377BA292E64F6009F89B6 /* ContentView.swift in Sources */,
 				08D377B8292E64F6009F89B6 /* travelApp.swift in Sources */,
 			);

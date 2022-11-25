@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    // MARK: - PROPERTIES
+
+    // MARK: - BODY
     var body: some View {
         VStack(alignment: .leading, spacing: 18){
             Text("Start your \nAdventure \nan Go \nTravel Now")
